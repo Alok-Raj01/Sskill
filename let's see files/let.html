@@ -4,11 +4,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <link rel="stylesheet" href="let.css">
+  <title>Profile</title>
 </head>
 
-<body>
-  its a lets see file and u r looged in 
-</body>
+<body id="body">
+  <h2 id="heading">Create Profile</h2>
+  
+<div class="main">
+  <!----- section for profilepic and name-->
+  <div class="otherDet">
+  <div class="profilepic">
+    <img id="ppf" src="../src/user.png">
+    <span id="edit">
+     <span class="fa-solid">+</span>
+      </span>
+  </div>
+  <div class="Details">
+    <input type="input" id="name" placeholder="Enter your name">
+  </div>
+</div>
 
+
+<!---- other details like description,  buttons and intrests --->
+<div class="otherD">
+  
+  <textarea placeholder="Write about you" id="desc" ></textarea>
+  
+  <div class="tAndc">
+    <span>What u can teach</span>
+    <input type="text" id="teach">
+    <span>what u want to learn</span>
+    <input type="text" id="learn">
+  </div>
+
+<div class="intrest">
+  <h4>Your skill</h4>
+  <div id="intlist">
+  <span class="item" id="test">coding</span>
+  <span class="item">Danceing</span>
+  <span class="item">Cooking</span>
+  <span class="item">Writing</span>
+  <span class="item">Sports</span>
+  <span class="item">study</span>
+  <span class="item">Reading</span>
+  <span class="item">traveling</span>
+  <span class="item">planning</span>
+  <span class="item">phycology</span>
+  <span class="item">Other</span>
+  </div>
+</div>
+</div>
+</div>
+
+<!----- The save button------>
+<div class="saveit">
+<button class="save">
+  Save
+</button>
+</div>
+
+<!-------- asking profil pic ---------->
+<div class="portel">
+  <input type="file" id="file" accept="image/*">
+    <label for="file" id="upload" > Upload</label>
+<div id="upbuttons">
+    <button id="cancel">cancel</button>
+  <button id="uploadb">upload</button>
+</div>
+</div>
+  
+  
+<!---- The loading and saved data ----->
+<div class="dataLoad">
+  <div class="loader"></div>
+  <div class="saveddata">
+    <h3>Profil Saved</h3>
+    <a id="tomain" href="..../mainpage/mainpg.html"  >Start ur journey</a>
+  </div>
+</div>
+
+</body>
+<script src="https://kit.fontawesome.com/3c05ca2980.js" crossorigin="anonymous"></script>
+<script type="module" src="let.js"></script> 
 </html>
