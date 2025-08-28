@@ -1,1 +1,248 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background:#121212;
+}
+
+.navbar{
+  width: 100%;
+  height: 45px;
+  background: #8c52ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  h2{
+    color: white;
+  }
+  .hamburger{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 10px;
+    span{
+      width: 80%;
+      height: 2px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .sm{
+      width: 50%;
+    }
+  }
+}
+
+.preProfile{
+  width: 80%;
+  height: 450px;
+  background: #1e1e1e;
+  border: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+  #ppfBorder{
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .profileLinks{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    span{
+      width: 100%;
+      height: 40px;
+      background: #1a1a1a;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 10px;
+    }
+  }
+}
+
+.cross{
+  width: 100%;
+  text-align: right;
+  font-size: 28px;
+  padding-right: 16px;
+  transform: translateY(-15px);
+}
+
+.hamElement{
+  width: 80vw;
+  height: 100vh;
+  background: #1a1a1a;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 0.8s;
+  .hamcross{
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 26px;
+    color: white;
+  }
+}
+
+
+.profileSegment{
+  width: 96%;
+  height: 55px;
+  border-radius: 6px;
+  margin: auto;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 100px;
+  .sec1{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+}
+.fa-angle-left {
+  width: 50px;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+
+
+
+/*   For the main userss ------------>*/
+.mainForUsers{
+  width: 100vw;
+  height: 550px;
+  overflow: scroll;
+  padding-left: 10px;
+  margin-top: 30px;
+  .allUsers{
+    width: 100vw;
+    min-height: 350px;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    .users{
+      width: 190px;
+      height: 250px;
+      border: 2px solid #1e1e1e;
+      background: #1e1e1e;
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 8px;
+      border-radius: 8px;
+      img{
+        width: 80%;
+        height: 150px;
+        border-radius: 8px;
+      }
+      .details{
+        color: white;
+        .lrAndtc{
+          width: 100%;
+          display: flex;
+          height: 50px;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 16px;
+          gap: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+/* the search section */
+.searchSec{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  input{
+    width: 65%;
+    height: 40px;
+    padding-left: 10px;
+    background: black;
+    border-radius: 50px;
+    border: 0.5px solid white;
+    outline: none;
+    color: white;
+  }
+  div{
+    width: 14%;
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background: #545454;
+    border-radius: 50px;
+    span{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 20px;
+    }
+  }
+  }
