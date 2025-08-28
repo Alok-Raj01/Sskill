@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <link rel="stylesheet" href="mainpg.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 </head>
-
 <body>
-  This is the main page , u r welcomed here 
+  <!------     navbar       -------->   
+  <div class="navbar">
+    <div class="img">  
+    <img src="../src/user.png" id="profilePic">
+    </div>
+     <h2>Sskill</h2>
+    <div class="hamburger">
+      <span class="sm"></span>
+      <span></span>
+    </div>
+  </div>
+  
+  
+<!----- search section ----->
+  <div class="searchSec">
+    <input type="search" placeholder="Skill ,name .....">
+    <div>
+      <span>0</span>
+      <img src="../src/coin.png">
+    </div>
+  </div>
+  
+  <!----  The profile  ------>
+<div class="preProfile">
+    <div class="cross">×</div>
+    <div id="ppfBorder">
+      <img src="../src/user.png" id="ppf2">
+    </div>
+    
+    <h1 id="username1">User</h1>
+    
+  <div class="profileLinks">
+    <span>View Profile</span>
+    <span>Account</span>
+    <span>Setting</span>
+    <span>log out</span>
+  </div>
+  </div>
+  
+<!-----    hamburger   ------>
+<div class="hamElement">
+  <div class="hamcross">×</div>
+  
+  <div class="profileSegment">
+    <div class="sec1">
+    <img id="ppf3" src="../src/user.png">
+    <h3 id="username2">user</h3>
+    </div>
+    <i class="fa-solid fa-angle-left"></i>
+  </div>
+</div>
+
+<!---- The main section for proflies --->
+<div class="mainForUsers">
+  <div class="allUsers">
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/3c05ca2980.js" crossorigin="anonymous"></script>
+<script type="module" src="mainpg.js"></script>
 </body>
-
 </html>
-
